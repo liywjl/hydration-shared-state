@@ -1,15 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import React from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import "./index.css";
+import { App1 } from "./App1";
+import { App2 } from "./App2";
+import reportWebVitals from "./reportWebVitals";
+
+ReactDOM.hydrate(<App1 />, document.getElementById("app1"));
+ReactDOM.hydrate(<App2 />, document.getElementById("app2"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
