@@ -1,3 +1,7 @@
+# What is this project?
+
+This project is a demo to explore how one can share data between multiple react hydrations. It uses [sister](https://github.com/gajus/sister) to attach event emitters to a shared object. We can then listen to those object changes using `useEffect` and a `useState` to trigger necessary re-renders on relevant components.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
